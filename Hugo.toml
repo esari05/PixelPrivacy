@@ -1,0 +1,4 @@
+baseURL = 'https://pixelprivacy.de/'
+languageCode = 'de-de'
+title = 'PixelPrivacy'
+theme = 'ananke'

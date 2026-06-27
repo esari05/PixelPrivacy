@@ -1,0 +1,54 @@
+baseURL = 'https://pixelprivacy.de/'
+languageCode = 'de-de'
+title = 'PixelPrivacy'
+theme = 'PaperMod'
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 10
+buildDrafts = false
+buildFuture = false
+
+[params]
+  env = 'production'
+  title = 'PixelPrivacy'
+  description = 'Datenschutz & Tech auf Deutsch – ehrliche Tipps zu VPNs, sicheren Apps, Privacy-Tools und mehr.'
+  author = 'PixelPrivacy'
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  ShowShareButtons = false
+  displayFullLangName = true
+  ShowRssButtonInSectionTermList = true
+
+  [params.homeInfoParams]
+    Title = 'Datenschutz trifft Tech'
+    Content = 'Ehrliche Bewertungen und Tipps zu VPNs, Passwort-Managern, sicheren Apps und Privacy-Tools – auf Deutsch, ohne Buzzwords.'
+
+  [[params.socialIcons]]
+    name = 'rss'
+    url = '/index.xml'
+
+[menu]
+  [[menu.main]]
+    name = 'VPN'
+    url = '/tags/vpn/'
+    weight = 10
+  [[menu.main]]
+    name = 'Tools'
+    url = '/tags/tools/'
+    weight = 20
+  [[menu.main]]
+    name = 'Anleitungen'
+    url = '/tags/anleitung/'
+    weight = 30
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[taxonomies]
+  tag = 'tags'
